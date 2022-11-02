@@ -1,12 +1,12 @@
 // Import data
-
+import Searchbar from './searchbar.js'
 // Import components
 import './App.css';
 
 function App(){
   return (
     <div>
-      <h1>craigslist</h1>
+      <Searchbar />
       <div className="App">
         {/* Your content will go here! */}
       </div>
