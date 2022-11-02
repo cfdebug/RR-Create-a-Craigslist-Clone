@@ -1,14 +1,21 @@
 // Import data
-import Searchbar from './searchbar.js'
+import { postings } from "./postings";
 // Import components
-import './App.css';
+import "./App.css";
+import Searchbar from "./Components/searchbar";
+import Gallery from "./Components/gallery";
+import Sidebar from "./Components/sidebar";
+import Directory from "./Components/directory";
 
-function App(){
+function App() {
   return (
     <div>
-      <Searchbar />
+      <h1>ChrisList</h1>
       <div className="App">
-        {/* Your content will go here! */}
+        <Searchbar />
+        <Directory />
+        <Sidebar />
+        <Gallery postings={postings} />
       </div>
     </div>
   );
